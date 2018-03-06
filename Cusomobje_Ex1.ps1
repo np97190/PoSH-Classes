@@ -2,7 +2,7 @@ try
 {
    $ErrorActionPreference = "stop"
     #Memory Usages
-   $OS = Get-WmiObject -Class win32_operatingsys
+   $OS = Get-WmiObject -Class win32_operatingsystem
    $TotalMemorySize = $OS.TotalVisibleMemorySize
    $freeMemorySize = $OS.FreePhysicalMemory
    
